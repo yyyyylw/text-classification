@@ -1,0 +1,12 @@
+# 课程提供的数据集与材料 (不随仓库公开)
+data-Project1/
+*.zip
+实验一要求.pdf
+
+# 提交答案文件 (公开仓库不包含, 防止被抄袭)
+predictions*.csv
+
+# Python 缓存与系统文件
+__pycache__/
+*.pyc
+.DS_Store

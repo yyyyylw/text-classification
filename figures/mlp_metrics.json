@@ -1,0 +1,123 @@
+{
+  "model": "多层感知器 (MLP)",
+  "val_accuracy": 0.9111261872455902,
+  "val_f1_macro": 0.9114555585300259,
+  "best_params": {
+    "hidden_layer_sizes": [
+      50,
+      100
+    ],
+    "alpha": 0.001,
+    "activation": "relu",
+    "max_iter": 300
+  },
+  "runtime_sec": 612.2,
+  "per_class_f1": {
+    "0": 0.863013698630137,
+    "1": 0.8562091503267973,
+    "2": 0.8,
+    "3": 0.9455782312925171,
+    "4": 0.9559322033898305,
+    "5": 0.9671052631578947,
+    "6": 0.9448275862068966,
+    "7": 0.8494983277591973,
+    "8": 0.9431438127090301,
+    "9": 0.989247311827957
+  },
+  "test_pred_counts": {
+    "0": 261,
+    "1": 242,
+    "2": 228,
+    "3": 238,
+    "4": 244,
+    "5": 245,
+    "6": 240,
+    "7": 276,
+    "8": 250,
+    "9": 233
+  },
+  "tuning": [
+    {
+      "val_acc": 0.9097693351424695,
+      "val_f1": 0.9104917609270297,
+      "sec": 109.6,
+      "hidden_layer_sizes": [
+        50
+      ],
+      "alpha": 0.001
+    },
+    {
+      "val_acc": 0.9097693351424695,
+      "val_f1": 0.9103929152955521,
+      "sec": 245.4,
+      "hidden_layer_sizes": [
+        200
+      ],
+      "alpha": 0.001
+    },
+    {
+      "val_acc": 0.9029850746268657,
+      "val_f1": 0.9040162907033764,
+      "sec": 36.0,
+      "hidden_layer_sizes": [
+        50,
+        50
+      ],
+      "alpha": 0.001
+    },
+    {
+      "val_acc": 0.8839891451831751,
+      "val_f1": 0.8846800305457518,
+      "sec": 29.8,
+      "hidden_layer_sizes": [
+        50,
+        50,
+        50
+      ],
+      "alpha": 0.001
+    },
+    {
+      "val_acc": 0.9029850746268657,
+      "val_f1": 0.9038712159567034,
+      "sec": 72.4,
+      "hidden_layer_sizes": [
+        100,
+        50
+      ],
+      "alpha": 0.001
+    },
+    {
+      "val_acc": 0.9111261872455902,
+      "val_f1": 0.9114555585300259,
+      "sec": 29.3,
+      "hidden_layer_sizes": [
+        50,
+        100
+      ],
+      "alpha": 0.001
+    }
+  ],
+  "config": {
+    "clean": {
+      "CLEAN_HEADERS": true,
+      "USE_SUBJECT": true,
+      "REMOVE_QUOTES": true,
+      "LOWERCASE": true,
+      "REMOVE_DIGITS": true,
+      "REMOVE_STOPWORDS": true
+    },
+    "tfidf": {
+      "MAX_FEATURES": 10000,
+      "NGRAM_RANGE": [
+        1,
+        2
+      ],
+      "MIN_DF": 2,
+      "SUBLINEAR_TF": true
+    },
+    "val_size": 0.2,
+    "random_state": 42
+  },
+  "train_loss": 0.0011355522774880722,
+  "val_loss": 0.34617122365438624
+}
