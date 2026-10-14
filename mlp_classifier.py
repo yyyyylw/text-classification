@@ -15,6 +15,9 @@ import time
 import matplotlib
 matplotlib.use('Agg')  # 无图形界面环境, 直接保存图片
 import matplotlib.pyplot as plt
+
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'sans-serif']
+plt.rcParams['axes.unicode_minus'] = False
 import numpy as np
 import pandas as pd
 from scipy.sparse import vstack
